@@ -74,7 +74,7 @@ AWS Services
 
 # Setup Instructions
 ## 1. Clone the repository
-git clone https://github.com/your-username/smart-drive-cloud-app.git
+git clone https://github.com/Aishwarya-k1155/Cloud-Based-Smart-File-Storage-Sharing-System
 
 ## 2. Install backend dependencies
 cd backend
