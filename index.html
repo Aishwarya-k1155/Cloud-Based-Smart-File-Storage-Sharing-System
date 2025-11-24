@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Drive - Cloud File Storage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ Smart Drive - Cloud File Storage</h1>
+
+    <div id="authSection" class="card">
+      <h2>User Authentication</h2>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <div class="buttons">
+        <button id="signupBtn">Sign Up</button>
+        <button id="loginBtn">Login</button>
+      </div>
+    </div>
+
+    <div id="fileSection" class="card" style="display: none;">
+      <h2>Upload a File</h2>
+      <input type="file" id="fileInput" />
+      <div class="buttons">
+        <button id="uploadBtn">Upload</button>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+
+      <h2>Your Files</h2>
+      <ul id="files" class="file-list">
+        <!-- file entries injected by script.js -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("signupBtn").addEventListener("click", signup);
+      document.getElementById("loginBtn").addEventListener("click", login);
+      document.getElementById("uploadBtn").addEventListener("click", uploadFile);
+      document.getElementById("logoutBtn").addEventListener("click", logout);
+    });
+  </script>
+</body>
+</html>
