@@ -92,6 +92,9 @@ python3 app.py
 ## Frontend (CloudFront – HTTPS):
 https://d3dltsp1h13o1v.cloudfront.net
 
+## S3 Static Website (Optional – HTTP Only):
+http://smart-drive-files-aishwarya.s3-website.ap-south-1.amazonaws.com
+
 ## Backend API (API Gateway – HTTPS):
 https://c2bnbljfi9.execute-api.ap-south-1.amazonaws.com
 
